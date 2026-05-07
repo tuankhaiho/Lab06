@@ -1,0 +1,45 @@
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 18px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.topnav a:hover{
+    background-color: aqua;
+    color: black;
+}
+
+.topnav .icon{
+    display: none;
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        flex: 1 100%;
+        order: 1;     
+    }
+    .aside-1 {
+        flex: 1 50%;  
+        order: 2;   
+    }
+    .aside-2 {
+        flex: 1 50%;  
+        order: 3;    
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .aside-1, .aside-2 {
+        flex: 1 100%; 
+    }
+}
